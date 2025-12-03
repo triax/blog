@@ -1,6 +1,6 @@
 ---
 title: Club TRIAX ブログを開設しました
-date: 2024-12-03 12:00:00 +0900
+date: 2024-12-01 12:00:00 +0900
 categories: [お知らせ]
 tags: [ブログ, お知らせ]
 author: triax
