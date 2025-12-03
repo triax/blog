@@ -1,0 +1,117 @@
+# Chirpy theme configuration
+# https://github.com/cotes2020/jekyll-theme-chirpy
+
+theme: jekyll-theme-chirpy
+
+# Site Settings
+lang: ja-JP
+timezone: Asia/Tokyo
+
+title: Club TRIAX Blog
+tagline: Club TRIAX の公式ブログ
+description: >-
+  Club TRIAX の活動報告、試合レポート、チーム情報をお届けします。
+
+url: "https://triax.github.io"
+baseurl: "/blog"
+
+github:
+  username: triax
+
+social:
+  name: Club TRIAX
+  email: info@triax.football
+  links:
+    - https://github.com/triax
+
+# Theme mode: light, dark, or auto
+theme_mode: auto
+
+# CDN endpoint for images
+img_cdn:
+
+# Avatar on sidebar
+avatar: /assets/img/avatar.png
+
+# Pagination
+paginate: 10
+
+# Site verification
+webmaster_verifications:
+  google:
+  bing:
+
+# Analytics
+analytics:
+  google:
+    id:
+
+# Page views (requires Google Analytics)
+pageviews:
+  provider:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+# Sass/SCSS
+sass:
+  style: compressed
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+# Exclude from processing
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+
+# Jekyll Archives
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
